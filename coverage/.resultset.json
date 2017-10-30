@@ -1,0 +1,89 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/renanoliveira/dev/wit-cart/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/models/cart_product.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/models/product.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/models/user_cart.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/models/user.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/renanoliveira/dev/wit-cart/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1509400137
+  }
+}
