@@ -5,19 +5,13 @@
         1,
         null
       ],
-      "/Users/renanoliveira/dev/wit-cart/app/models/cart_product.rb": [
+      "/Users/renanoliveira/dev/wit-cart/app/models/product.rb": [
         1,
         1,
         1,
         null
       ],
       "/Users/renanoliveira/dev/wit-cart/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/renanoliveira/dev/wit-cart/app/models/product.rb": [
-        1,
         1,
         1,
         null
@@ -83,6 +77,12 @@
         1,
         null
       ],
+      "/Users/renanoliveira/dev/wit-cart/app/models/cart_product.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/renanoliveira/dev/wit-cart/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -111,6 +111,6 @@
         0
       ]
     },
-    "timestamp": 1509417389
+    "timestamp": 1509419467
   }
 }
