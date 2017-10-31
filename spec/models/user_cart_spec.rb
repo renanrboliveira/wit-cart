@@ -50,7 +50,7 @@ RSpec.describe UserCart, type: :model do
         user.user_carts.first.update_attributes(updated_at: Time.now + 3.days)
         begin
           user.user_carts.first.add_product(create(:product), 10)
-        rescue => e
+        rescue RuntimeError => e
           expect(e.message).to eq 'Cart expired'
         end
       end
@@ -62,7 +62,7 @@ RSpec.describe UserCart, type: :model do
         product.save
         begin
           user.user_carts.first.add_product(product, 10)
-        rescue => e
+        rescue RuntimeError => e
           expect(e.message).to eq "Products changed prices: #{product.name}"
         end
       end
