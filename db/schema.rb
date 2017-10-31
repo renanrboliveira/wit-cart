@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20171030164708) do
     t.bigint "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.decimal "price_product", precision: 10, scale: 2
+    t.decimal "product_price", precision: 10, scale: 2
     t.index ["product_id"], name: "index_cart_products_on_product_id"
     t.index ["user_cart_id"], name: "index_cart_products_on_user_cart_id"
   end
