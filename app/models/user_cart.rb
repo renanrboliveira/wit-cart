@@ -42,13 +42,6 @@ class UserCart < ApplicationRecord
     cart_products.where(product_id: product.id).first
   end
 
-  def update_products_price
-    cart_products.map do |cart_product|
-      cart_product.product = cart_product.product.price
-      cart_product.save
-    end
-  end
-
   def products_changed_price
     products = ''
     cart_products.map do |cart_product|

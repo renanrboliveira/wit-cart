@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-31T09:53:03-03:00">2017-10-31T09:53:03-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-31T09:58:16-03:00">2017-10-31T09:58:16-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.16%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.05
+         2.1
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>19</b> files in total.
-    <b>163</b> relevant lines. 
-    <span class="green"><b>160</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed </span>
+    <b>159</b> relevant lines. 
+    <span class="green"><b>159</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -72,12 +72,12 @@
       
       <tr>
         <td class="strong"><a href="#d3db7c158b13cabe9cc8d63870ae064071f03b50" class="src_link" title="app/models/user_cart.rb">app/models/user_cart.rb</a></td>
-        <td class="green strong">90.91 %</td>
-        <td>63</td>
-        <td>33</td>
-        <td>30</td>
-        <td>3</td>
-        <td>4.4</td>
+        <td class="green strong">100.0 %</td>
+        <td>56</td>
+        <td>29</td>
+        <td>29</td>
+        <td>0</td>
+        <td>5.0</td>
       </tr>
       
       <tr>
@@ -381,11 +381,11 @@
         <div class="source_table" id="d3db7c158b13cabe9cc8d63870ae064071f03b50">
   <div class="header">
     <h3>app/models/user_cart.rb</h3>
-    <h4><span class="green">90.91 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>33</b> relevant lines. 
-      <span class="green"><b>30</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <b>29</b> relevant lines. 
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -659,25 +659,25 @@
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update_products_price</code>
+          <code class="ruby">  def products_changed_price</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
+        <li class="covered" data-hits="12" data-linenumber="46">
+          <span class="hits">12</span>
           
+          <code class="ruby">    products = &#39;&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="47">
+          <span class="hits">12</span>
           
           <code class="ruby">    cart_products.map do |cart_product|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
+        <li class="covered" data-hits="5" data-linenumber="48">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">      cart_product.product = cart_product.product.price</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
-          
-          <code class="ruby">      cart_product.save</code>
+          <code class="ruby">      products &lt;&lt; cart_product.product.name if cart_product.product_price != cart_product.product.price</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -686,85 +686,43 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def products_changed_price</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="53">
-          <span class="hits">12</span>
-          
-          <code class="ruby">    products = &#39;&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="54">
-          <span class="hits">12</span>
-          
-          <code class="ruby">    cart_products.map do |cart_product|</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="55">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      products &lt;&lt; cart_product.product.name if cart_product.product_price != cart_product.product.price</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="57">
+        <li class="covered" data-hits="12" data-linenumber="50">
           <span class="hits">12</span>
           
           <code class="ruby">    products</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
           <code class="ruby">  def expired?</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="61">
+        <li class="covered" data-hits="12" data-linenumber="54">
           <span class="hits">12</span>
           
           <code class="ruby">    (updated_at - Time.current) &gt; 2</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">end</code>
