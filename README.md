@@ -26,6 +26,11 @@ Install RVM: [see RVM installation guide](http://rvm.io).
 ```sh
 $ rvm install ruby-2.4.2
 ```
+### Install nodejs
+```sh
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
 
 ### Install bundler
 ```sh
