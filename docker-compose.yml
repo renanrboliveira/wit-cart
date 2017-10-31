@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+  witcart:
+    build: .
+    command: make run
+    ports:
+      - "3000:3000"
+    links:
+      - postgresdb
+    depends_on:
+      - postgresdb
+    volumes:
+      - .:/usr/src/wit-cart
+      - bundle-data:/usr/src/bundle
+
+  postgresdb:
+    image: postgres
+    ports:
+      - "5433:5433"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  pgadmin4:
+    image: thajeztah/pgadmin4
+    links:
+      - postgresdb
+    ports:
+      - "5050:5050"
+
+volumes:
+  postgres-data:
+    driver: local
+  bundle-data:
+    driver: local
