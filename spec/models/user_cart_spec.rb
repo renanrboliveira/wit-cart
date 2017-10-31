@@ -41,11 +41,6 @@ RSpec.describe UserCart, type: :model do
         expect(user.user_carts.first.total).to eq 399.96
       end
 
-      it 'should have list products' do
-        user.user_carts.first.add_product(create(:product), 10)
-        user.user_carts.first.add_product(create(:product), 20)
-      end
-
       it 'should have return message if cart expired' do
         user.user_carts.first.update_attributes(updated_at: Time.now + 3.days)
         begin
@@ -69,6 +64,12 @@ RSpec.describe UserCart, type: :model do
     end
 
     context 'when user remove product' do
+      it 'should have return empty' do
+        product = create(:product)
+        user.user_carts.first.add_product(product, 10)
+        user.user_carts.first.remove_product(product)
+        expect(user.user_carts.first.cart_products.count).to eq 0
+      end
     end
   end
 end

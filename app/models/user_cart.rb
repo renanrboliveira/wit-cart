@@ -19,6 +19,10 @@ class UserCart < ApplicationRecord
     end
   end
 
+  def remove_product(product)
+    cart_products.where(product_id: product.id).destroy_all
+  end
+
   def total
     cart_products.includes(:product).sum('quantity * products.price').to_f
   end
