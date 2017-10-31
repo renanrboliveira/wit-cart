@@ -86,5 +86,34 @@ $ RAILS_ENV=test bundle exec rake db:create && bundle exec rake db:migrate && bu
 $ bundle exec rspec
 ```
 
+## Docker (optional installation)
+**Install Docker [here](https://docs.docker.com/engine/installation/)**
 
+Build images:
+```sh
+$ make rebuild
+```
 
+Create databases:
+```sh
+make docker-createdb
+```
+
+Start the application:
+```sh
+$ make up
+```
+
+If you need use another instance of application in Docker (for run the rails console for example):
+```sh
+make bash
+```
+
+To finish all Docker instances:
+```sh
+$ make down
+```
+
+**Access**: [http://localhost:3000](http://localhost:3000)
+
+**pgAdmin4**: [http://localhost:5050](http://localhost:5050)
