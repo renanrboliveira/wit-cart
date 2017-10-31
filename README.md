@@ -1,4 +1,6 @@
 # README
+[![Maintainability](https://api.codeclimate.com/v1/badges/3ec9fa1c98d0a7845be0/maintainability)](https://codeclimate.com/github/renanrboliveira/wit-cart/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3ec9fa1c98d0a7845be0/test_coverage)](https://codeclimate.com/github/renanrboliveira/wit-cart/test_coverage)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
